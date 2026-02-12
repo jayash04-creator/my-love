@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>For Anushka ❤️</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; font-family: 'Poppins', sans-serif; background-color: #000; touch-action: manipulation; }
+        .main-bg { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url('jayanu.jpeg'); background-size: cover; background-position: center; z-index: -2; animation: dreamyZoom 30s infinite alternate ease-in-out; }
+        @keyframes dreamyZoom { 0% { transform: scale(1); } 100% { transform: scale(1.15); } }
+        .overlay-layer { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+        .floating-element { position: absolute; pointer-events: none; animation: floatUp linear forwards; filter: drop-shadow(0 0 5px white); }
+        @keyframes floatUp { 0% { transform: translateY(110vh) scale(0.3); opacity: 0; } 20% { opacity: 0.8; } 100% { transform: translateY(-20vh) scale(1.5); opacity: 0; } }
+        .container { position: relative; z-index: 10; display: flex; justify-content: center; align-items: center; height: 100%; width: 100%; padding: 15px; box-sizing: border-box; }
+        .slide { display: none; background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(15px); -webkit-backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.2); padding: 25px 20px; border-radius: 35px; text-align: center; width: 100%; max-width: 360px; max-height: 85vh; overflow-y: auto; color: #fff; animation: romanticFade 1.2s ease; scrollbar-width: none; }
+        .slide::-webkit-scrollbar { display: none; }
+        @keyframes romanticFade { from { opacity: 0; transform: scale(0.95) translateY(10px); } to { opacity: 1; transform: scale(1) translateY(0); } }
+        .active { display: block; }
+        .content-photo { width: 110px; height: 110px; object-fit: cover; border-radius: 50%; border: 3px solid #fff; margin-bottom: 15px; box-shadow: 0 0 25px #ff4d6d; }
+        h2, h3 { font-family: 'Great Vibes', cursive; font-size: 2.2rem; color: #ffb3c1; margin-bottom: 12px; line-height: 1.2; }
+        .anu-name { font-size: 4.5rem; color: #fff; text-shadow: 0 0 20px #ff4d6d; font-family: 'Great Vibes', cursive; display: block; }
+        .highlight { color: #ffd700; font-weight: 600; }
+        button { background: linear-gradient(45deg, #ff4d6d, #c9184a); color: white; border: none; padding: 14px 0; border-radius: 50px; font-size: 1.2rem; cursor: pointer; width: 85%; margin-top: 15px; font-family: 'Great Vibes', cursive; box-shadow: 0 5px 15px rgba(255, 77, 109, 0.4); }
+        .letter-text { text-align: justify; font-size: 0.88rem; line-height: 1.6; color: rgba(255,255,255,0.95); padding: 0 5px; }
+        .soul-text { font-style: italic; font-size: 1.1rem; line-height: 1.7; color: #ffccd5; text-shadow: 0 0 10px rgba(255, 204, 213, 0.5); }
+        .hug-btn { background: rgba(255, 255, 255, 0.2); width: 60%; font-size: 0.9rem; font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body>
+    <audio id="loveSong" loop><source src="Perfect (slowed).mp3" type="audio/mpeg"></audio>
+    <div class="main-bg"></div>
+    <div class="overlay-layer" id="overlayContainer"></div>
+    <div class="container">
+        <div class="slide active" id="slide1">
+            <img src="jayanu.jpeg" class="content-photo">
+            <div style="font-size: 70px; cursor: pointer; animation: floating 3s infinite ease-in-out;" onclick="startExperience()">✉️</div>
+            <h3>To My Dearest Anu...</h3>
+            <p>I have a message for your heart. Tap the envelope to open.</p>
+        </div>
+        <div class="slide" id="slide2">
+            <img src="jayanu.jpeg" class="content-photo">
+            <h2>You are the most beautiful chapter in my life ❤️</h2>
+            <button onclick="nextSlide(2)">Read My Soul ❤️</button>
+        </div>
+        <div class="slide" id="slide3">
+            <img src="jayanu.jpeg" class="content-photo">
+            <p style="font-size: 1.2rem; font-style: italic; color: #ffb3c1;">"Neither the desire of the moon, nor the request of the stars... you should be with me in every moment. This is my only wish."</p>
+            <button onclick="nextSlide(3)">Continue ❤️</button>
+        </div>
+
+        <div class="slide" id="slide4">
+            <img src="jayanu.jpeg" class="content-photo">
+            <div class="soul-text">
+                "I don’t know what I did to deserve you, but every heartbeat of mine whispers your name. If one day my voice fades and my eyes close forever, even then my soul will search for you… because loving you is not just a feeling, it is my existence. You are not just someone I love — you are the reason my world still feels alive. If tears ever fall from your eyes, remember… somewhere, my heart is breaking just to hold your smile together." ❤️
+            </div>
+            <button onclick="nextSlide(4)">Keep Reading ❤️</button>
+        </div>
+
+        <div class="slide" id="slide5">
+            <img src="jayanu.jpeg" class="content-photo">
+            <p style="text-align: justify; font-size: 0.85rem;">You are my true love which I have never felt with anyone till date. I know I have made mistakes in the past, but I promise I will die but I will not repeat them. Please come back in my life. I cannot breathe without you. My dear Anu baby, I really want to marry you. <span class="highlight">If you want to marry me, say yes on chat.</span></p>
+            <button onclick="nextSlide(5)">The Proposal ❤️</button>
+        </div>
+
+        <div class="slide" id="slide6">
+            <img src="jayanu.jpeg" class="content-photo">
+            <h3 style="font-size: 1.8rem;">My Valentine Proposal — For Anushka ❤️</h3>
+            <div class="letter-text">
+                Anushka, I don't know how to begin... When you came into my life, I realized what it means to be "special." Slowly, you became my habit, my happiness. You're the reason for my smile, the place where I find peace.<br><br>
+                Anushka... <span class="highlight">will you be mine forever?</span> Will you hold my hand and walk with me for the rest of my life? Will you be a part of my every joy, every pain, every dream?<br><br>
+                I promise—I may not be perfect, but I will never leave you alone. I will stand by you in every difficulty. I love you, Anushka... always, in every life, only you. ❤️🌹
+            </div>
+            <button onclick="nextSlide(6); triggerFinalBurst()">Forever Yours ❤️</button>
+        </div>
+
+        <div class="slide" id="slide7">
+            <img src="jayanu.jpeg" class="content-photo">
+            <span class="anu-name">Anushka</span>
+            <p>I love you more than all the stars in the sky.</p>
+            <h3>Happy Valentine's Day my heartbeat, my wife!</h3>
+            <div style="font-size: 35px;">😘💋💏💋😘</div>
+            <button class="hug-btn" onclick="triggerHug()">Tap to send a hug 🤗</button><br>
+            <button style="background: rgba(255,255,255,0.05); width: 40%; font-size: 0.7rem; margin-top: 10px;" onclick="location.reload()">Replay ↻</button>
+        </div>
+    </div>
+    <script>
+        function startExperience() { document.getElementById('loveSong').play(); nextSlide(1); setInterval(() => spawn('❤️'), 400); setInterval(() => spawn('✨'), 800); }
+        function spawn(s) { const c = document.getElementById('overlayContainer'); const e = document.createElement('div'); e.classList.add('floating-element'); e.innerHTML = s; e.style.left = Math.random() * 100 + 'vw'; e.style.fontSize = Math.random() * 20 + 10 + 'px'; e.style.animationDuration = Math.random() * 3 + 4 + 's'; c.appendChild(e); setTimeout(() => e.remove(), 7000); }
+        function triggerFinalBurst() { for(let i=0; i<30; i++) { setTimeout(() => spawn('😘'), i * 100); setTimeout(() => spawn('💍'), i * 200); } }
+        function triggerHug() { for(let i=0; i<20; i++) { setTimeout(() => spawn('🫂'), i * 100); setTimeout(() => spawn('💓'), i * 150); } alert("I'm hugging you right now through the screen, Anu. ❤️"); }
+        function nextSlide(n) { document.getElementById('slide' + n).style.display = 'none'; document.getElementById('slide' + (n + 1)).classList.add('active'); }
+    </script>
+</body>
+</html>
